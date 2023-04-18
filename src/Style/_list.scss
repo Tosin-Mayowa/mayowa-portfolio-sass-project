@@ -1,0 +1,9 @@
+%list_items {
+    list-style: none;
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: colorFunc(color-white);
+        font-size: 1.5rem;
+    }}

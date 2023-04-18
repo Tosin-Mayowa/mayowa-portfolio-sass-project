@@ -1,0 +1,17 @@
+$colors:("color-primary":#FF9F1C,
+    "color-secondary":#0A2472,
+    "color-white":#ffffff,
+    "color-black":#000000,
+    "color-tertiary":#FCE74C,
+    "color-classic":#042A2B,
+    "color-green":#002a22,
+    "color-ora":#E59500,
+    "color-dark":#143642,
+    "color-oxford":#05204A,
+    "color-royal":#2A2A72,
+    "color-penn":#0A1045,
+) ;
+
+@function colorFunc($val) {
+    @return map-get($colors, $val)
+}

@@ -1,0 +1,71 @@
+@import "../../Style/colors";
+
+@mixin sideStyle($value) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $value;
+}
+
+
+
+#container {
+    display: flex;
+
+    .side-nav {
+        position: sticky;
+        top: 0; // meaning start from top to the height speculated
+        left: 0; // start from left at point zero
+        height: 100vh;
+
+
+        &__content {
+            height: 100%;
+            @include sideStyle(space-between);
+            background-color: colorFunc(color-penn);
+
+
+            &-logo {
+                img {
+                    width: calc(3vw + 3vh);
+
+                    object-fit: cover;
+
+                }
+            }
+
+            &-social {
+                height: 50%;
+                @include sideStyle(space-evenly);
+                align-items: center;
+            }
+        }
+    }
+
+    .main {
+        width: 100vw;
+    }
+}
+
+
+
+@for $i from 1 through 6 {
+    .icon-#{$i} {
+        color: colorFunc(color-white);
+        font-size: calc(1rem + 0.66667vw); // true value is 20px, but I dont want the size to go below 10px so I made it dynamic
+        // as the width reduce I dont want the padding-bottom: to be less than 20px;
+        transform: scale(1);
+        transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    }
+}
+
+$nums : (1, 2, 3, 4, 5, 6);
+
+@each $num in $nums {
+
+    .icon-#{$num}:hover,
+    .icon-#{$num}:active {
+        color: colorFunc(color-ora);
+        background-color: colorFunc(color-white);
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,184 @@
+@import "../../../Style/colors";
+@import "../../../Style/list";
+
+@mixin media {
+    @media screen and (max-width:610px) {
+        @content;
+    }
+}
+
+@mixin trans($val) {
+    transition: all 0.5s ease-in-out $val;
+}
+
+.header {
+    // takes the width of its parent automatically
+    background-color: colorFunc(color-ora);
+    height: calc(3vw + 3vh);
+    z-index: 2;
+
+
+
+    &__nav {
+        height: 100%;
+
+
+        &-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+
+            li {
+                @extend %list_items;
+                padding-right: 3vw;
+
+                a {
+                    position: relative;
+                    padding: 0.2rem 0.6rem;
+                    font-size: calc(1rem + 0.66667vw);
+                }
+
+                a:link::before,
+                a:visited::before,
+                a:link::after,
+                a:visited::after {
+                    content: ""; //whatever you put here appear before and after the parent which is the link
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 0.2rem; // this gives the two lines but the both appear at the top
+                    background-color: white;
+                    transform: scaleX(0);
+                    transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
+                }
+
+                a:link::before,
+                a:visited::before {
+                    top: 0;
+                    //transfm origin is at center by default but I want d movement to start frm left here
+                    transform-origin: left;
+                }
+
+                a:link::after,
+                a:visited::after {
+                    bottom: 0;
+                    transform-origin: right;
+                }
+
+                a:hover::before,
+                a:active::before,
+                a:hover::after,
+                a:active::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    @include media {
+position: absolute;
+
+        &__nav {
+            width: 30rem;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: -30rem;
+            text-align: center;
+            background-color: colorFunc(color-ora);
+
+            &-links {
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                li {
+                    margin-top: 4vh;
+                    margin-left: 6vw;
+                    opacity: 0;
+
+
+                }
+
+                li:nth-child(1) {
+                    @include trans(0.2s);
+
+                }
+
+                li:nth-child(2) {
+                    @include trans(0.4s)
+                }
+
+                li:nth-child(3) {
+                    @include trans(0.6s)
+                }
+
+                li:nth-child(4) {
+                    @include trans(0.8s)
+                }
+
+                li:nth-child(5) {
+                    @include trans(1s)
+                }
+
+                li:nth-child(6) {
+                    @include trans(1.2s)
+                }
+            }
+
+            &-hamburger {
+                width: 5rem;
+                height: 5rem;
+                position: fixed;
+                top: 3rem;
+                right: 3rem;
+                cursor: pointer;
+                background-color: colorFunc(color-ora);
+                padding: 1rem;
+                border-radius: 50%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .line {
+                    width: 100%;
+                    height: 0.3rem;
+                    background-color: colorFunc(color-white);
+                    border-radius: 0.2rem;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+
+        .clicked {
+            width: 30rem;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 55%;
+            text-align: center;
+            background-color: colorFunc(color-ora);
+
+           
+
+            .line-1 {
+                transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+            }
+
+            .line-2 {
+                opacity: 0; // use it to hide sth
+            }
+
+            .line-3 {
+                transform: rotateZ(405deg) translate(-0.8rem, -0.6rem); //405=360+45 make it rotate 360 before crossing responsible for sharp movement
+            }
+
+            .fade {
+                opacity: 1;
+            }
+        }
+
+    }
+}
