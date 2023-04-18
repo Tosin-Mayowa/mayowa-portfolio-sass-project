@@ -52,7 +52,7 @@
     .icon-#{$i} {
         color: colorFunc(color-white);
         font-size: calc(1rem + 0.66667vw); // true value is 20px, but I dont want the size to go below 10px so I made it dynamic
-        // as the width reduce I dont want the padding-bottom: to be less than 20px;
+       
         transform: scale(1);
         transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55),
     }
