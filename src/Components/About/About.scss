@@ -1,0 +1,138 @@
+@import '../../Partials/colors';
+@import '../../Partials/pseudo';
+@import '../../Partials/media';
+
+$max_width-859:859px;
+$max_width-1023:1023px;
+$max_width-500:500px;
+$max_width-400:400px;
+
+.about__me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: colorFunc(color-ora);
+
+    &-img,
+    &-content {
+        flex-basis: 40rem;
+        padding: 2rem;
+        flex-grow: 1;
+
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 8rem;
+    }
+
+    &-content {
+        // margin-left: -15rem;
+
+        &--title {
+            font-size: 4rem;
+            padding: 1rem 0;
+            text-transform: uppercase;
+            color: colorFunc(color-white);
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 0.3rem;
+                width: 10%;
+                background-color: colorFunc(color-penn);
+            }
+
+
+        }
+
+        &--title,
+        &--para {
+            margin-bottom: 4rem;
+            letter-spacing: 0.2rem;
+        }
+
+        &--para {
+            font-size: 1.8rem;
+        }
+
+        &--link:link,
+        &--link:visited {
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: colorFunc(color-white);
+            position: relative;
+            z-index: 2;
+
+            &:link::after,
+            &:visited::after {
+                @extend %pseudo-style;
+                transform: scaleY(0);
+                transform-origin: top;
+
+            }
+
+            &:hover::after,
+            &:active::after {
+
+                transform: scaleY(1);
+
+
+            }
+
+        }
+    }
+
+    @include media($max_width-1023) {
+        &-img {
+            margin-left: 2rem;
+
+        }
+
+        @include media($max_width-859) {
+            &-img {
+                margin-left: 4rem;
+
+            }
+
+            &-content {
+                margin-left: 4rem;
+            }
+        }
+
+        @include media($max_width-500) {
+            &-img {
+                margin-left: 1rem;
+
+            }
+
+            &-content {
+                margin-left: 1rem;
+            }
+        }
+
+        @include media($max_width-400) {
+            &-img {
+                width: 100vw;
+               height: 100vh;
+                margin-left: -7rem;
+
+            }
+
+            &-content {
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,8 +1,10 @@
 @import "../../Partials/colors";
 @import "../../Partials/media";
+@import "../../Partials/pseudo";
 
 $max_width-900:900px;
 $max_width-1000:1000px;
+$max_width-400:400px;
 
 #home {
     height: 100vh;
@@ -39,44 +41,40 @@ $max_width-1000:1000px;
             color: colorFunc(color-white);
         }
 
+        &-link {
 
+            &:link,
+            &:visited {
+                padding: 1rem 0;
+                transition: all 0.5s ease-in-out;
+                width: 12rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                flex-shrink: 0;
+                color: colorFunc(color-white);
+                font-size: 1.5rem;
+                font-weight: 600;
+                letter-spacing: 0.2rem;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+            }
 
-        &-link:link,
-        &-link:visited {
-            padding: 1rem 0;
-            transition: all 0.5s ease-in-out;
-            width: 12rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            flex-shrink: 0;
-            color: colorFunc(color-white);
-            font-size: 1.5rem;
-            font-weight: 600;
-            letter-spacing: 0.2rem;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
+            &:link::after,
+            &:visited::after {
+                @extend %pseudo-style;
+                
+                transform: scaleX(0);
+                transform-origin: left;
+                
+             
 
-        &-link:link::after,
-        &-link:visited::after {
-            content: ""; // animation effect
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: colorFunc(color-penn);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
-            z-index: -1;
+            }
 
-        }
-
-        &-link:hover::after,
-        &-link:active::after {
-            transform: scaleX(1);
+            &:hover::after,
+            &:active::after {
+                transform: scaleX(1);
+            }
         }
     }
 
@@ -84,36 +82,52 @@ $max_width-1000:1000px;
 
         .home__content {
             margin-left: 3rem;
-        }}
+        }
+    }
 
-        @include media($max_width-900) {
-            background-position: 100%;
-
-
-
-
-            .home__content {
-                margin-left: 3rem;
-                padding: 1rem calc(1rem + 2vw);
+    @include media($max_width-900) {
+        background-position: 100%;
 
 
-                &-title {
-                    font-size: calc(2rem + 2vw);
-                    color: colorFunc(color-white);
 
-                }
+
+        .home__content {
+            margin-left: 3rem;
+            padding: 1rem calc(1rem + 2vw);
+
+
+            &-title {
+                font-size: calc(2rem + 2vw);
+                color: colorFunc(color-white);
+
             }
         }
     }
 
-    @keyframes box {
-        0% {
-            transform: translateX(100rem) rotate(360deg);
-            opacity: 0;
-        }
+    @include media($max_width-400) {
 
-        100% {
-            transform: translateX(0);
-            opacity: 1;
+        .home__content {
+            margin-left: 1rem;
+            padding: 1rem calc(2rem + 2vw);
+            justify-content: space-evenly;
+
+            &-title {
+                font-size: calc(1rem + 2vw);
+                color: colorFunc(color-white);
+
+            }
         }
     }
+}
+
+@keyframes box {
+    0% {
+        transform: translateX(100rem) rotate(360deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

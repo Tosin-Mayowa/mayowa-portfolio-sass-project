@@ -1,0 +1,11 @@
+%pseudo-style {
+    content: ""; // animation effect
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: colorFunc(color-penn);
+    z-index: -1;
+    transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
