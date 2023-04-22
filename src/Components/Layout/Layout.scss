@@ -1,4 +1,4 @@
-@import "../../Style/colors";
+@import "../../Partials/colors";
 
 @mixin sideStyle($value) {
     display: flex;
@@ -12,7 +12,7 @@
     display: flex;
 
     .side-nav {
-        position: sticky;
+        position: fixed;
         top: 0; // meaning start from top to the height speculated
         left: 0; // start from left at point zero
         height: 100vh;

@@ -1,0 +1,120 @@
+@import "../../Partials/colors";
+@import "../../Partials/media";
+
+$max_width-900:900px;
+$max_width-1000:1000px;
+
+#home {
+    height: 100vh;
+    background-image: url('../../Assets/sassh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    .home__content {
+        margin-left: calc(3rem + 2.1333vw);
+        animation: box 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        background-color: colorFunc(color-orafade);
+        padding: calc(1rem + 2vw);
+        height: calc(5rem + 20vmax);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+            font-size: calc(2rem + 3vw);
+            color: colorFunc(color-white);
+
+        }
+
+        &-para {
+            font-style: italic;
+            font-size: calc(1.5rem + 1vw);
+            color: colorFunc(color-white);
+        }
+
+
+
+        &-link:link,
+        &-link:visited {
+            padding: 1rem 0;
+            transition: all 0.5s ease-in-out;
+            width: 12rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            flex-shrink: 0;
+            color: colorFunc(color-white);
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        &-link:link::after,
+        &-link:visited::after {
+            content: ""; // animation effect
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: colorFunc(color-penn);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+            z-index: -1;
+
+        }
+
+        &-link:hover::after,
+        &-link:active::after {
+            transform: scaleX(1);
+        }
+    }
+
+    @include media($max_width-1000) {
+
+        .home__content {
+            margin-left: 3rem;
+        }
+    }
+
+        @include media($max_width-900) {
+            background-position: 100%;
+
+
+
+
+            .home__content {
+                margin-left: 3rem;
+                padding: 1rem calc(1rem + 2vw);
+
+
+                &-title {
+                    font-size: calc(2rem + 2vw);
+                    color: colorFunc(color-white);
+
+                }
+            }
+        }
+    }
+
+    @keyframes box {
+        0% {
+            transform: translateX(100rem) rotate(360deg);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
