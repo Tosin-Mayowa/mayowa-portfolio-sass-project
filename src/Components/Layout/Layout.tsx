@@ -4,7 +4,7 @@ import Logo from "../../Assets/newLogo.png";
 import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { CiTwitter } from "react-icons/ci";
 import {FaPinterest} from "react-icons/fa";
-import {Navbar} from "./Navbar/Navbar"
+import {Header} from "./Header/Header"
 const Layout=({children})=>{
 
     return (
@@ -44,7 +44,7 @@ const Layout=({children})=>{
           {/* end of side navbar  */}
           {/* main content goes here */}
           <div className="main">
-            <Navbar />
+            <Header />
             {children}
           </div>
         </div>

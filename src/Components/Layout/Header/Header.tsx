@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import './Navbar.scss'
-export const Navbar=()=>{
+import './Header.scss'
+export const Header=()=>{
 const [isClicked,setIsClicked]=useState(false)
     return (
       <>

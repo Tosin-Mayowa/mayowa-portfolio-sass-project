@@ -84,8 +84,7 @@ $max_width-1000:1000px;
 
         .home__content {
             margin-left: 3rem;
-        }
-    }
+        }}
 
         @include media($max_width-900) {
             background-position: 100%;
