@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './Header.scss'
+import { Link } from "react-router-dom";
 export const Header=()=>{
 const [isClicked,setIsClicked]=useState(false)
     return (
@@ -19,22 +20,34 @@ const [isClicked,setIsClicked]=useState(false)
 
             <ul className="header__nav-links">
               <li className={isClicked ? "fade" : ""}>
-                <a href="#">Home</a>
+                <Link to="/">
+                  {" "}
+                  <a>Home</a>
+                </Link>
               </li>
               <li className={isClicked ? "fade" : ""}>
-                <a href="#">About</a>
+                <Link to="/about">
+                  <a>About</a>
+                </Link>
               </li>
               <li className={isClicked ? "fade" : ""}>
-                <a href="#">Project</a>
+                <Link to="/project">
+                  <a>Project</a>
+                </Link>
               </li>
               <li className={isClicked ? "fade" : ""}>
+                <Link to="/services"></Link>
                 <a href="#">Services</a>
               </li>
               <li className={isClicked ? "fade" : ""}>
-                <a href="#">Hire me</a>
+                <Link to="/hire">
+                  <a>Hire me</a>
+                </Link>
               </li>
               <li className={isClicked ? "fade" : ""}>
-                <a href="#">Contact</a>
+                <Link to="/contact">
+                  <a>Contact</a>
+                </Link>
               </li>
             </ul>
           </nav>
