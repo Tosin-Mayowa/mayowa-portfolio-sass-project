@@ -73,7 +73,7 @@ $max_width:610px;
         }
     }
 
-    @include media($max_width ) {
+    @include media($max_width) {
         position: absolute;
 
         &__nav {
@@ -134,10 +134,10 @@ $max_width:610px;
                 background-color: colorFunc(color-ora);
                 padding: 1rem;
                 border-radius: 50%;
-Z-index:100;
-                display: flex;
+                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+                Z-index: 100;
 
                 .line {
                     width: 100%;
@@ -145,6 +145,7 @@ Z-index:100;
                     background-color: colorFunc(color-white);
                     border-radius: 0.2rem;
                     transition: all 0.2s ease-in-out;
+                    Z-index: 100;
                 }
             }
         }
