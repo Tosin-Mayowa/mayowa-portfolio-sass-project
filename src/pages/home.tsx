@@ -3,6 +3,7 @@ import withLayout from '../withLayout';
 import HomeComp from '../Components/Home/HomeComp';
 import Project from '../Components/Project/Project';
 import About from '../Components/About/About';
+import SkillsComp from '../Components/Skills/SkillsComp';
 const Home=()=>{
 
     return(
@@ -10,6 +11,7 @@ const Home=()=>{
 <HomeComp/>
 <Project/>
 <About/>
+<SkillsComp/>
         </>
     )
 }

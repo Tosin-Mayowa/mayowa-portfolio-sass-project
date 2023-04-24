@@ -1,0 +1,58 @@
+@import '../../Partials/colors';
+@import '../../Partials/pseudo';
+
+.skills {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem 2rem 2rem;
+    background-color: colorFunc(color-penn);
+
+    .skill {
+        padding: 4rem;
+        // height: 15.706rem;
+        margin: 0 2rem 4rem;
+        flex-basis: 40rem;
+        flex-grow: 1;
+        background-color: colorFunc(color-ora);
+        border-bottom: 0.2rem solid colorFunc(color-ora);
+        border-right: 0.2rem solid colorFunc(color-ora);
+        border-left: 0.2rem solid colorFunc(color-ora);
+        z-index: 2;
+        position: relative;
+
+        &::after {
+            @extend %pseudo-style;
+            transform: scaleX(0);
+        }
+
+        &:hover::after,
+        &:active::after {
+            transform: scaleX(1);
+        }
+
+        &-icon,
+        &-title {
+            margin-bottom: 2rem;
+        }
+
+        &-icon {
+            font-size: 3rem;
+            color: colorFunc(color-white);
+        }
+
+        &-title {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        &-para {
+            font-style: oblique;
+            font-size: 2rem;
+            color: colorFunc(color-white);
+        }
+    }
+
+}

@@ -36,8 +36,9 @@ const [isClicked,setIsClicked]=useState(false)
                 </Link>
               </li>
               <li className={isClicked ? "fade" : ""}>
-                <Link to="/services"></Link>
-                <a href="#">Services</a>
+                <Link to="/skills">
+                  <a>skills</a>
+                </Link>
               </li>
               <li className={isClicked ? "fade" : ""}>
                 <Link to="/hire">
