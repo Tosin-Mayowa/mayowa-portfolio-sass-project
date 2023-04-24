@@ -22,7 +22,7 @@
 //100% --- 16px
 :root {
   font-size: 62.5%; // 10px now no longer 16px
-  overflow: scroll;
+  // overflow: scroll;
 }
 
 body {
@@ -38,8 +38,8 @@ code {
 
 
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  /* make scrollbar transparent */
-}
+// ::-webkit-scrollbar {
+//   width: 0px;
+//   background: transparent;
+//   /* make scrollbar transparent */
+// }

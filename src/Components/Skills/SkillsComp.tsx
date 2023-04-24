@@ -34,7 +34,7 @@ const SkillsComp= () => {
           <FaHtml5 className="skill-icon" />
           <h3 className="skill-title skills__content-4--title">HTML5</h3>
           <p className="skill-para skills__content-4--para">
-            This is the foundation of frontend, I am an exprience html user
+            This is the foundation of frontend, I am an exprience html user, I have been using html5 for many years now.
           </p>
         </div>
         <div className="skill skills__content-5">

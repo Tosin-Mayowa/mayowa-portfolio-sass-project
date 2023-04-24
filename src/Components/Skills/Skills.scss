@@ -2,13 +2,14 @@
 @import '../../Partials/pseudo';
 
 .skills {
-    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 6rem 2rem 2rem;
     background-color: colorFunc(color-penn);
+
 
     .skill {
         padding: 4rem;
@@ -55,4 +56,17 @@
         }
     }
 
+
+
 }
+
+// $indx:1;
+
+// @while $indx<=5 {
+//     .skills__content-#{$indx} {
+//         margin-left: 30rem;
+//         border-top: red;
+//     }
+
+//     $indx:$indx + 2;
+// }
