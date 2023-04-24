@@ -12,7 +12,7 @@ $max_width:610px;
     // takes the width of its parent automatically
     background-color: colorFunc(color-ora);
     height: calc(3vw + 3vh);
-    z-index: 2;
+    z-index: 100;
 
 
 
@@ -134,10 +134,10 @@ $max_width:610px;
                 background-color: colorFunc(color-ora);
                 padding: 1rem;
                 border-radius: 50%;
-                 display: flex;
+                display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                Z-index: 100;
+               
 
                 .line {
                     width: 100%;
@@ -145,7 +145,7 @@ $max_width:610px;
                     background-color: colorFunc(color-white);
                     border-radius: 0.2rem;
                     transition: all 0.2s ease-in-out;
-                    Z-index: 100;
+                    
                 }
             }
         }
