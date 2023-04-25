@@ -17,10 +17,10 @@ const Layout=({children})=>{
                 <img src={Logo} alt="Mayowa" />
               </div>
               <ul className="side-nav__content-social">
-                <a href="#" className="side-nav__content-social__link-1">
+                <a href="https://www.linkedin.com/in/mayowa-adejumola-389992137/" className="side-nav__content-social__link-1">
                   <BsLinkedin className="icon-1" />
                 </a>
-                <a href="#" className="side-nav__content-social__link-2">
+                <a href="https://github.com/Tosin-Mayowa" className="side-nav__content-social__link-2">
                   {" "}
                   <BsGithub className="icon-2" />
                 </a>
