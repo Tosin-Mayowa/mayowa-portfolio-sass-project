@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaReact, FaSass,FaHtml5,FaGit } from "react-icons/fa";
+import { FaReact, FaSass,FaHtml5,FaGit, FaNodeJs,FaNode } from "react-icons/fa";
 import { SiTypescript,SiRedux } from "react-icons/si";
+import {GrGraphQl} from "react-icons/gr";
 import './Skills.scss';
 const SkillsComp= () => {
   return (
@@ -34,7 +35,8 @@ const SkillsComp= () => {
           <FaHtml5 className="skill-icon" />
           <h3 className="skill-title skills__content-4--title">HTML5</h3>
           <p className="skill-para skills__content-4--para">
-            This is the foundation of frontend, I am an exprience html user, I have been using html5 for many years now.
+            This is the foundation of frontend, I am an exprience html user, I
+            have been using html5 for many years now.
           </p>
         </div>
         <div className="skill skills__content-5">
@@ -46,11 +48,40 @@ const SkillsComp= () => {
           </p>
         </div>
         <div className="skill skills__content-6">
-          <FaGit className="skill-icon" />
-          <h3 className="skill-title skills__content-6--title">Git</h3>
+          <FaNodeJs className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">Node</h3>
           <p className="skill-para skills__content-6--para">
-            This is what makes me a real developer, ability to work with team
-            without conflict
+            I use nodejs to create server for my frontend
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <FaNode className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">Nestjs</h3>
+          <p className="skill-para skills__content-6--para">
+            This is the framework for nodejs, I use it to handle the server for
+            my frontend application,my proficiency level is high.
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <FaNodeJs className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">Expressjs</h3>
+          <p className="skill-para skills__content-6--para">
+            This is also a Nodejs framework, which I also use in building the
+            server side of my application
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <FaReact className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">Nextjs</h3>
+          <p className="skill-para skills__content-6--para">
+            This is a react framework which I use in building fullstack app.
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <GrGraphQl className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">GraphQL</h3>
+          <p className="skill-para skills__content-6--para">
+            I use graphql apollo client to handle the Graphql API, connecting react to Graphql server
           </p>
         </div>
       </section>

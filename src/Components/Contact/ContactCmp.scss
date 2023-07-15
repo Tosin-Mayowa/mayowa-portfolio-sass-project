@@ -6,29 +6,32 @@ $max_width-680:680px;
 $max_width-460:460px;
 $max_width-360:360px;
 
-.hire {
+.contact {
     display: flex;
     flex-wrap: wrap;
-    background: colorFunc(color-ora);
+    background: colorFunc(color-penn);
     height: 100vh;
     padding: 3rem 2rem 3rem 6rem;
     justify-content: center;
 
     &-cont {
         padding: 1rem 4rem;
-        width: 50%;
-        background: colorFunc(color-penn);
-        color: colorFunc(color-white);
+        width: 40%;
+        background: colorFunc(color-ora);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        .para-1{
+            margin-top: 15px;
+            
+        }
 
         &_title {
-            font-size: 5rem;
+            font-size: 6rem;
         }
 
         &_para {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
     }

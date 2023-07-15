@@ -4,6 +4,8 @@ import redux from "../../Assets/redux.jpg";
 import cart from "../../Assets/cart.jpg";
 import form from "../../Assets/form.jpg";
 import sharp from "../../Assets/Sharp.jpg";
+import regix from "../../Assets/regix-1.jpg"
+import sendrail from "../../Assets/sendrail.jpg";
 import './Project.scss'
 // import port from "../../Assets/";
 const Project=()=>{
@@ -12,22 +14,27 @@ const Project=()=>{
       <>
         <section id="work">
           <div className="work_card">
-            <img src={port} alt="" />
+            <a href="https://sendrail-web-dev.onrender.com" target="_blank">
+              <img src={sendrail} alt="" />
+            </a>
           </div>
           <div className="work_card">
-            <img src={cart} alt="" />
+            <a href="https://regix-rzay.vercel.app/" target="_blank">
+              <img src={regix} alt="" />
+            </a>
           </div>
           <div className="work_card">
-            <img src={form} alt="" />
+            <a href="https://shopping-cart-psi-ten.vercel.app/" target="_blank">
+              <img src={cart} alt="" />
+            </a>
           </div>
           <div className="work_card">
-            <img src={sharp} alt="" />
-          </div>
-          <div className="work_card">
-            <img src={port} alt="" />
-          </div>
-          <div className="work_card">
-            <img src={port} alt="" />
+            <a
+              href="https://github.com/Tosin-Mayowa/sharpsharp-ecomm"
+              target="_blank"
+            >
+              <img src={sharp} alt="" />
+            </a>
           </div>
         </section>
       </>
