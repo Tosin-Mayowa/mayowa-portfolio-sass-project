@@ -4,8 +4,8 @@ import HomeComp from '../Components/Home/HomeComp';
 import Project from '../Components/Project/Project';
 import About from '../Components/About/About';
 import SkillsComp from '../Components/Skills/SkillsComp';
-import { HireMe } from '../Components/HireMe/HireMe';
-import { ContactComp } from '../Components/Contact/ContactComp';
+import HireMe  from '../Components/HireMe/HireMe';
+import ContactComp  from '../Components/Contact/ContactComp';
 const Home=()=>{
 
     return(

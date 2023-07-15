@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactCmp.scss";
 
-export const ContactComp = () => {
+ const ContactComp = () => {
   return (
     <>
       <section className="contact">
@@ -24,3 +24,4 @@ export const ContactComp = () => {
     </>
   );
 };
+export default ContactComp;

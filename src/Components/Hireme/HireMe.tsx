@@ -1,7 +1,7 @@
 import React from "react";
 import "./HireMe.scss";
 
-export const HireMe = () => {
+ const HireMe = () => {
   return (
     <>
       <section className="hire">
@@ -22,3 +22,4 @@ export const HireMe = () => {
     </>
   );
 };
+export default HireMe;
