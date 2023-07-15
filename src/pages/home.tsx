@@ -4,8 +4,9 @@ import HomeComp from '../Components/Home/HomeComp';
 import Project from '../Components/Project/Project';
 import About from '../Components/About/About';
 import SkillsComp from '../Components/Skills/SkillsComp';
-import HireMe  from '../Components/HireMe/HireMe';
+import HireMe  from '../Components/HireComp/HireComp';
 import ContactComp  from '../Components/Contact/ContactComp';
+import HireComp from '../Components/HireComp/HireComp';
 const Home=()=>{
 
     return(
@@ -14,7 +15,7 @@ const Home=()=>{
 <Project/>
 <About/>
 <SkillsComp/>
-<HireMe/>
+<HireComp/>
 <ContactComp/>
         </>
     )

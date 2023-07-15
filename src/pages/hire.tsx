@@ -1,10 +1,11 @@
 import React from "react";
 import withLayout from "../withLayout";
-import HireMe  from "../Components/HireMe/HireMe";
+
+import HireComp from "../Components/HireComp/HireComp";
 const Hire = () => {
   return (
     <>
-      <HireMe/>
+      <HireComp/>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
-import "./HireMe.scss";
+import "./HireComp.scss";
 
- const HireMe = () => {
+ const HireComp = () => {
   return (
     <>
       <section className="hire">
@@ -22,4 +22,4 @@ import "./HireMe.scss";
     </>
   );
 };
-export default HireMe;
+export default HireComp;
