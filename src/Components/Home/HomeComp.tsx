@@ -8,7 +8,7 @@ const HomeComp = () => {
           <h1 className="home__content-title">Mayowa Tosin Adejumola</h1>
           <p className="home__content-para">Fullstack Engineer</p>
           <a
-            href="https://sendrail-web-dev.onrender.com"
+            href="https://regix-rzay.vercel.app/"
             className="home__content-link"
           >
             My Project
