@@ -2,11 +2,50 @@ import React from 'react';
 import { FaReact, FaSass,FaHtml5,FaGit, FaNodeJs,FaNode } from "react-icons/fa";
 import { SiTypescript,SiRedux } from "react-icons/si";
 import {GrGraphQl} from "react-icons/gr";
+import { TbBrandCSharp } from "react-icons/tb";
 import './Skills.scss';
 const SkillsComp= () => {
   return (
     <>
       <section className="skills">
+        <div className="skill skills__content-6">
+          <TbBrandCSharp className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">C#</h3>
+          <p className="skill-para skills__content-6--para">
+            C# is statically typed programming Language which I use on the
+            backend to build applications
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <TbBrandCSharp className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">
+            ASP.NET CORE WEB API
+          </h3>
+          <p className="skill-para skills__content-6--para">
+            ASP.NET CORE WEB API is a cross platform C# framework I used in creating Rest Api for 
+            web applications
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <TbBrandCSharp className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">
+            ASP.NET CORE Razor Page
+          </h3>
+          <p className="skill-para skills__content-6--para">
+            ASP.NET CORE Razor Page is a cross platform C# framework I used in
+             fullstack web applications
+          </p>
+        </div>
+        <div className="skill skills__content-6">
+          <TbBrandCSharp className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">
+            ASP.NET CORE MVC
+          </h3>
+          <p className="skill-para skills__content-6--para">
+            ASP.NET CORE MVC is a cross platform C# framework I used in building fullstack
+            web applications
+          </p>
+        </div>
         <div className="skill skills__content-1">
           <FaReact className="skill-icon" />
           <h3 className="skill-title skills__content-1--title">React</h3>
@@ -47,13 +86,7 @@ const SkillsComp= () => {
             out of component tree, best framewrk to use is Redux.
           </p>
         </div>
-        <div className="skill skills__content-6">
-          <FaNodeJs className="skill-icon" />
-          <h3 className="skill-title skills__content-6--title">Node</h3>
-          <p className="skill-para skills__content-6--para">
-            I use nodejs to create server for my frontend
-          </p>
-        </div>
+
         <div className="skill skills__content-6">
           <FaNode className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">Nestjs</h3>
@@ -81,7 +114,8 @@ const SkillsComp= () => {
           <GrGraphQl className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">GraphQL</h3>
           <p className="skill-para skills__content-6--para">
-            I use graphql apollo client to handle the Graphql API, connecting react to Graphql server
+            I use graphql apollo client to handle the Graphql API, connecting
+            react to Graphql server
           </p>
         </div>
       </section>

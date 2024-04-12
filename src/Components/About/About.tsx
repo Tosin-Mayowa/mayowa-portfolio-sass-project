@@ -13,9 +13,9 @@ const About=()=>{
             <h2 className="about__me-content--title">About me</h2>
             <p className="about__me-content--para">
               Fullstack Engineer with experience in building solutions to solve
-              real life problems. Design, build and implement the user interface
+              real life problems. Design, build and implement the user interface and Server side
               systems of web based applications achieving a satisfactory user
-              experience with no issues, errors or downtime, using React.js,
+              experience with no issues, errors or downtime, using C#,ASP.NET CORE(WEB API,RAZOR PAGE,MVC),MS SQL SERVER,SSMS, React.js,
               Next.js,Typescript,Redux ,React Testing Library and Jest, Git, GIT
               CI/CD, Chakra-Ui, React-Table,Nodejs,Expressjs,Nestjs. I have experience working in an
               Agile environment using tools like Jira and Slack. I also have
