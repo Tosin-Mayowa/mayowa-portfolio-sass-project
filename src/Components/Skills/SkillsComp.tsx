@@ -8,6 +8,14 @@ const SkillsComp= () => {
   return (
     <>
       <section className="skills">
+      <div className="skill skills__content-6">
+          <FaNodeJs className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">Expressjs</h3>
+          <p className="skill-para skills__content-6--para">
+            This is also a Nodejs framework, which I also use in building the
+            server side of my application
+          </p>
+        </div>
         <div className="skill skills__content-6">
           <TbBrandCSharp className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">C#</h3>
@@ -86,7 +94,7 @@ const SkillsComp= () => {
             out of component tree, best framewrk to use is Redux.
           </p>
         </div>
-
+{/* 
         <div className="skill skills__content-6">
           <FaNode className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">Nestjs</h3>
@@ -94,15 +102,15 @@ const SkillsComp= () => {
             This is the framework for nodejs, I use it to handle the server for
             my frontend application,my proficiency level is high.
           </p>
-        </div>
-        <div className="skill skills__content-6">
+        </div> */}
+        {/* <div className="skill skills__content-6">
           <FaNodeJs className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">Expressjs</h3>
           <p className="skill-para skills__content-6--para">
             This is also a Nodejs framework, which I also use in building the
             server side of my application
           </p>
-        </div>
+        </div> */}
         <div className="skill skills__content-6">
           <FaReact className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">Nextjs</h3>
