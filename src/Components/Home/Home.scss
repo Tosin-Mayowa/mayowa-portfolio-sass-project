@@ -116,6 +116,11 @@ $max_width-400:400px;
                 color: colorFunc(color-white);
 
             }
+            &-para {
+                font-style: italic;
+                font-size: calc(1rem + 1vw);
+                color: colorFunc(color-white);
+            }
         }
     }
 }
