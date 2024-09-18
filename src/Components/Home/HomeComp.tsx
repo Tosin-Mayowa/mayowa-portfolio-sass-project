@@ -6,7 +6,7 @@ const HomeComp = () => {
       <section id="home">
         <div className="home__content">
           <h1 className="home__content-title">Mayowa Tosin Adejumola</h1>
-          <p className="home__content-para">Fullstack Engineer(NodeJs|.NET|React)</p>
+          <p className="home__content-para">Fullstack Engineer</p>
           <a
             
             href="https://github.com/Tosin-Mayowa/Fina-Project"
