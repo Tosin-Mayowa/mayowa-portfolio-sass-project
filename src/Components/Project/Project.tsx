@@ -14,7 +14,7 @@ const Project=()=>{
       <>
         <section id="work">
           <div className="work_card">
-            <a href="https://sendrail-web-dev.onrender.com" target="_blank">
+            <a href="https://github.com/Tosin-Mayowa/sendrail" target="_blank">
               <img src={sendrail} alt="" />
             </a>
           </div>
