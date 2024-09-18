@@ -13,16 +13,17 @@ const Project=()=>{
     return (
       <>
         <section id="work">
+        <div className="work_card">
+            <a href="https://regix-rzay.vercel.app/" target="_blank">
+              <img src={regix} alt="" />
+            </a>
+          </div>
           <div className="work_card">
             <a href="https://github.com/Tosin-Mayowa/sendrail" target="_blank">
               <img src={sendrail} alt="" />
             </a>
           </div>
-          <div className="work_card">
-            <a href="https://regix-rzay.vercel.app/" target="_blank">
-              <img src={regix} alt="" />
-            </a>
-          </div>
+          
           <div className="work_card">
             <a href="https://shopping-cart-psi-ten.vercel.app/" target="_blank">
               <img src={cart} alt="" />
