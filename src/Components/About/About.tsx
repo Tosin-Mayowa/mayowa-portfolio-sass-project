@@ -15,8 +15,8 @@ const About=()=>{
               Fullstack Engineer with experience in building solutions to solve
               real life problems. Design, build and implement the user interface and Server side
               systems of web based applications achieving a satisfactory user
-              experience with no issues, errors or downtime, using, NodeJs,Express, C#,ASP.NET CORE(WEB API,RAZOR PAGE,MVC),MS SQL SERVER,SSMS, React.js,
-              Next.js,Typescript,Redux ,React Testing Library and Jest, Git, GIT
+              experience with no issues, errors or downtime, using,React.js,
+              Next.js,Typescript,Redux ,React Testing Library and Jest, Git, GIT, NodeJs,Express, C#,ASP.NET CORE(WEB API,RAZOR PAGE,MVC),MS SQL SERVER,SSMS, 
               CI/CD, Chakra-Ui, React-Table,Nestjs. I have experience working in an
               Agile environment using tools like Jira and Slack. I also have
               skills when it comes to leading and managing team and people, an
