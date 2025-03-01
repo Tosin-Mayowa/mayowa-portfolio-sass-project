@@ -8,6 +8,14 @@ const SkillsComp= () => {
   return (
     <>
       <section className="skills">
+      <div className="skill skills__content-1">
+          <FaReact className="skill-icon" />
+          <h3 className="skill-title skills__content-1--title">React</h3>
+          <p className="skill-para skills__content-1--para">
+            I am an an experience React developer, I have been opprtune to build
+            loan app,logistic apps with React and its frame work
+          </p>
+        </div>
       <div className="skill skills__content-6">
           <FaNodeJs className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">Expressjs</h3>
@@ -54,14 +62,7 @@ const SkillsComp= () => {
             web applications
           </p>
         </div>
-        <div className="skill skills__content-1">
-          <FaReact className="skill-icon" />
-          <h3 className="skill-title skills__content-1--title">React</h3>
-          <p className="skill-para skills__content-1--para">
-            I am an an experience React developer, I have been opprtune to build
-            loan app,logistic apps with React and its frame work
-          </p>
-        </div>
+        
         <div className="skill skills__content-2">
           <SiTypescript className="skill-icon" />
           <h3 className="skill-title skills__content-2--title">Typescrpt</h3>
