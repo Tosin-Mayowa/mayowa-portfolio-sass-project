@@ -6,6 +6,7 @@ import form from "../../Assets/form.jpg";
 import sharp from "../../Assets/Sharp.jpg";
 import regix from "../../Assets/regix-1.jpg"
 import sendrail from "../../Assets/sendrail.jpg";
+import Quiz from "../../Assets/Quizima.png"
 import './Project.scss'
 // import port from "../../Assets/";
 const Project=()=>{
@@ -13,6 +14,11 @@ const Project=()=>{
     return (
       <>
         <section id="work">
+        <div className="work_card">
+            <a href="https://i-digix-quiz.vercel.app/" target="_blank">
+              <img src={Quiz} alt="" />
+            </a>
+          </div>
         <div className="work_card">
             <a href="https://regix-rzay.vercel.app/" target="_blank">
               <img src={regix} alt="" />

@@ -9,7 +9,7 @@ const HomeComp = () => {
           <p className="home__content-para">Fullstack Engineer(React|Node.js|.NET)</p>
           <a
             
-            href="https://github.com/Tosin-Mayowa/Fina-Project"
+            href="https://i-digix-quiz.vercel.app/"
             className="home__content-link"
           >
             My Project
