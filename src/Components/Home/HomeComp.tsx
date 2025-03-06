@@ -6,7 +6,7 @@ const HomeComp = () => {
       <section id="home">
         <div className="home__content">
           <h1 className="home__content-title">Mayowa Tosin Adejumola</h1>
-          <p className="home__content-para">Fullstack Engineer(React|Node.js|.NET)</p>
+          <p className="home__content-para">Frontend Engineer(React)</p>
           <a
             
             href="https://i-digix-quiz.vercel.app/"
