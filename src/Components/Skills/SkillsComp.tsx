@@ -16,6 +16,36 @@ const SkillsComp= () => {
             loan app,logistic apps with React and its frame work
           </p>
         </div>
+        <div className="skill skills__content-6">
+          <FaReact className="skill-icon" />
+          <h3 className="skill-title skills__content-6--title">Nextjs</h3>
+          <p className="skill-para skills__content-6--para">
+            This is a react framework which I use in building fullstack app.
+          </p>
+        </div>
+        <div className="skill skills__content-2">
+          <SiTypescript className="skill-icon" />
+          <h3 className="skill-title skills__content-2--title">Typescrpt</h3>
+          <p className="skill-para skills__content-2--para">
+            I am a lover of typescript, using typescript with react makes life
+            easier and removes error
+          </p>
+        </div>
+        <div className="skill skills__content-5">
+          <SiRedux className="skill-icon" />
+          <h3 className="skill-title skills__content-5--title">Javascript</h3>
+          <p className="skill-para skills__content-5--para">
+            Highly experience in writting Javascript, this is the language use in react and also node.js. My proficiency level in 
+            writing this high level scripting language used in both client and server side code is very high.
+          </p>
+        </div>
+        <div className="skill skills__content-5">
+          <SiRedux className="skill-icon" />
+          <h3 className="skill-title skills__content-5--title">CSS3</h3>
+          <p className="skill-para skills__content-5--para">
+            I have deep understanding of CSS and I can write CSS to build things that mostly many can only build using CSS library. I have trained myself to realy understand how the CSS work underneath the hood, understand the properties and how I can combine it with html or tsx elements to come up with a great UI.
+            </p>
+        </div>
       <div className="skill skills__content-6">
           <FaNodeJs className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">Expressjs</h3>
@@ -63,14 +93,7 @@ const SkillsComp= () => {
           </p>
         </div>
         
-        <div className="skill skills__content-2">
-          <SiTypescript className="skill-icon" />
-          <h3 className="skill-title skills__content-2--title">Typescrpt</h3>
-          <p className="skill-para skills__content-2--para">
-            I am a lover of typescript, using typescript with react makes life
-            easier and removes error
-          </p>
-        </div>
+     
         <div className="skill skills__content-3">
           <FaSass className="skill-icon" />
           <h3 className="skill-title skills__content-3--title">Sass</h3>
@@ -89,10 +112,10 @@ const SkillsComp= () => {
         </div>
         <div className="skill skills__content-5">
           <SiRedux className="skill-icon" />
-          <h3 className="skill-title skills__content-5--title">Redux</h3>
+          <h3 className="skill-title skills__content-5--title">Javascript</h3>
           <p className="skill-para skills__content-5--para">
-            Highly experience in the use of redux, talking about lifting state
-            out of component tree, best framewrk to use is Redux.
+            Highly experience in writting Javascript, this is the language use in react and also node.js. My proficiency level in 
+            writing this high level scripting language used in both client and server side code is very high.
           </p>
         </div>
 {/* 
@@ -112,13 +135,7 @@ const SkillsComp= () => {
             server side of my application
           </p>
         </div> */}
-        <div className="skill skills__content-6">
-          <FaReact className="skill-icon" />
-          <h3 className="skill-title skills__content-6--title">Nextjs</h3>
-          <p className="skill-para skills__content-6--para">
-            This is a react framework which I use in building fullstack app.
-          </p>
-        </div>
+  
         <div className="skill skills__content-6">
           <GrGraphQl className="skill-icon" />
           <h3 className="skill-title skills__content-6--title">GraphQL</h3>
