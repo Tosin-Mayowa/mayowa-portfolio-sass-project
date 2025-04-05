@@ -16,7 +16,7 @@ const About=()=>{
               real life problems. Design, build and implement the user interface and Server side
               systems of web based applications achieving a satisfactory user
               experience with no issues, errors or downtime, using,React.js,
-              Next.js,Typescript,Redux ,React Testing Library and Jest, Git, GIT, NodeJs,Express, C#,ASP.NET CORE(WEB API,RAZOR PAGE,MVC),MS SQL SERVER,SSMS, 
+              Next.js,Typescript, Javascript, Redux ,React Testing Library and Jest, Git, GIT, NodeJs,Express, C#,ASP.NET CORE(WEB API,RAZOR PAGE,MVC),MS SQL SERVER,SSMS, 
               CI/CD, Chakra-Ui, React-Table,Nestjs. I have experience working in an
               Agile environment using tools like Jira and Slack. I also have
               skills when it comes to leading and managing team and people, an
@@ -25,7 +25,7 @@ const About=()=>{
               student, I love solving complex problems, When it comes to web
               page functionality and design, I am your guy.
             </p>
-            <a href="" className="about__me-content--link">
+            <a href="#" className="about__me-content--link">
                 Read more
             </a>
           </div>
