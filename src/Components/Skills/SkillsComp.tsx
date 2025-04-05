@@ -1,8 +1,9 @@
 import React from 'react';
-import { FaReact, FaSass,FaHtml5,FaGit, FaNodeJs,FaNode } from "react-icons/fa";
+import { FaReact, FaSass,FaHtml5,FaGit, FaNodeJs,FaNode,FaCss3Alt } from "react-icons/fa";
 import { SiTypescript,SiRedux } from "react-icons/si";
 import {GrGraphQl} from "react-icons/gr";
 import { TbBrandCSharp } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io";
 import './Skills.scss';
 const SkillsComp= () => {
   return (
@@ -32,7 +33,7 @@ const SkillsComp= () => {
           </p>
         </div>
         <div className="skill skills__content-5">
-          <SiRedux className="skill-icon" />
+          <IoLogoJavascript className="skill-icon" />
           <h3 className="skill-title skills__content-5--title">Javascript</h3>
           <p className="skill-para skills__content-5--para">
             Highly experience in writting Javascript, this is the language use in react and also node.js. My proficiency level in 
@@ -40,7 +41,7 @@ const SkillsComp= () => {
           </p>
         </div>
         <div className="skill skills__content-5">
-          <SiRedux className="skill-icon" />
+          <FaCss3Alt className="skill-icon" />
           <h3 className="skill-title skills__content-5--title">CSS3</h3>
           <p className="skill-para skills__content-5--para">
             I have deep understanding of CSS and I can write CSS to build things that mostly many can only build using CSS library. I have trained myself to realy understand how the CSS work underneath the hood, understand the properties and how I can combine it with html or tsx elements to come up with a great UI.
