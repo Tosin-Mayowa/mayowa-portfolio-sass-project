@@ -8,6 +8,8 @@ import regix from "../../Assets/regix-1.jpg"
 import sendrail from "../../Assets/sendrail.jpg";
 import Quiz from "../../Assets/Quizima.png"
 import dashboard from "../../Assets/forbe.png"
+import lms from "../../Assets/portfolio-pixx.png"
+
 import './Project.scss'
 // import port from "../../Assets/";
 const Project=()=>{
@@ -15,6 +17,11 @@ const Project=()=>{
     return (
       <>
         <section id="work">
+        <div className="work_card">
+            <a href="https://lms-app-njr7.vercel.app/" target="_blank">
+              <img src={lms} alt="" />
+            </a>
+          </div>
         <div className="work_card">
             <a href="https://i-digix-quiz.vercel.app/" target="_blank">
               <img src={Quiz} alt="" />
